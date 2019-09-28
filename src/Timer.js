@@ -45,9 +45,12 @@ class Timer extends Component{
     render(){
         return(
             <div>
+                <center>
+                <header>Renzy Timer</header>
                 <h1>{this.state.minute} : {this.state.second} : {this.state.millisecond}</h1>
-                <input onChange = {(e) => this.setState({minute : (e.target.value)})}></input>
+                <input onChange = {(e) => this.setState({minute : (e.target.value)})}></input><br></br><br></br>
                 <button onClick={(e) => this.timerStart(e)}>START</button>
+                </center>
             </div>
         )
     }
